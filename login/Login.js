@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, TextInput,Button,Image} from 'react-native';
+import {StackNavigator} from 'react-navigation'
 
 export default class Login extends Component{
 
@@ -26,6 +27,7 @@ export default class Login extends Component{
                 />
 
                 <Button style ={{margin: 20,flexDirection: 'row',justifyContent: 'space-between'}}
+                onPress={() => this.props.navigation.navigate('Home')} title="Home"
                 title="Login"
                 color="#841584"
                 />
